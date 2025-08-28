@@ -248,5 +248,3 @@ app = Flask(__name__)
 def main():
     email = request.args.get("email")
     return jsonify(Email2UsernameTikTok(email).get_ksj())
-if __name__ == "__main__":
-    app.run(debug=True)
